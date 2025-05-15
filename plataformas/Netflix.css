@@ -1,0 +1,420 @@
+/* General */
+.netflix-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #1e0f0f;
+    color: #f1f1f1;
+}
+
+/* Header */
+.netflix-page header {
+    background-color: #000000;
+    padding: 1.5em;
+    border-top: 4px solid #e50914;
+    border-bottom: 4px solid #e50914;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.netflix-page .logo-header {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.netflix-page .logo-header img {
+    max-width: 100px;
+    /* Ajustamos el tamaño del logo */
+    height: auto;
+}
+
+.netflix-page h1 {
+    margin: 0;
+    color: #e50914;
+    font-size: 2.5rem;
+    /* Ajusta el tamaño de la fuente para el encabezado */
+}
+
+/* Navegación */
+.netflix-page nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.netflix-page nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.netflix-page nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.netflix-page nav a:hover {
+    color: #e50914;
+}
+
+.netflix-page .netflix-neon {
+    text-transform: uppercase;
+    font-size: 4rem;
+    cursor: pointer;
+    transition: 0.3s linear;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(168, 0, 0);
+    background-image: linear-gradient(to left, rgb(255, 0, 0), rgb(255, 0, 0), rgb(0, 0, 0), rgb(255, 0, 0));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    animation: move 50s linear infinite;
+}
+
+.netflix-page .netflix-neon-text:hover {
+    color: red;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5),
+        0 0 20px rgba(255, 0, 0, 0.5),
+        0 0 40px rgba(255, 0, 0, 0.5);
+}
+
+@keyframes move {
+    100% {
+        background-position: 2000px 0;
+    }
+
+}
+
+/* Contenido principal */
+.netflix-page main {
+    padding: 30px;
+    background-color: #331313;
+    margin-bottom: 100px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #1c1c1c;
+    border: 2px solid #e50914;
+    border-radius: 10px;
+    width: 350px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px #e50914;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.estrellas {
+    color: gold;
+    font-size: 0.95em;
+}
+
+.seccion {
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2em;
+}
+
+.netflix-page main h3 {
+    color: #e50914;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #888;
+    display: flex;
+    min-height: 0px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 1em;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+
+.netflix-page footer div.netflix-copyright {
+    text-align: center;
+    flex-grow: 0;
+}
+
+footer div.netflix-copyright a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer div.netflix-redes-sociales {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.netflix-redes-sociales a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.netflix-redes-sociales img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+}
+
+.netflix-redes-sociales img:hover {
+    transform: scale(1.2);
+}
+
+/*BOTON DE VOLVER ARRIBA*/
+.netflix-page #scrollToTop {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    display: none;
+    background-color: #3f1e1e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /* menos redondeado que un círculo */
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 4px 8px rgba(225, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.netflix-page #scrollToTop:hover {
+    background-color: #cf2323;
+    transform: translateY(-5px);
+}
+
+/* MÓVILES y dispositivos de hasta 768px */
+@media (max-width: 768px) {
+    .netflix-page header {
+        padding: 1em;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .netflix-page .logo-header {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin-bottom: 0px;
+        order: -1;
+    }
+
+    .titulo-header {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    footer,
+    footer div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .netflix-copyright {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        position: static;
+    }
+
+    .netflix-redes-sociales,
+    footer div.netflix-redes-sociales {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+        margin-top: 10px;
+        position: static;
+        left: 0;
+        top: auto;
+        right: 0;
+    }
+
+
+}
+
+/* iPads y tablets de hasta 1024px */
+@media (max-width: 1024px) {
+    header div.logo {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    header {
+        padding: 1em;
+    }
+
+    nav li {
+        display: block;
+        margin: 30px 0;
+    }
+
+    .netflix-page footer {
+        position: relative;
+        bottom: -10px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .netflix-copyright {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        position: static;
+    }
+
+    .netflix-redes-sociales,
+    footer div.netflix-redes-sociales {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+        margin-top: 10px;
+        position: static;
+        left: 0;
+        top: auto;
+        right: 0;
+    }
+
+
+}
+
+/* Dispositivos pequeños: móviles hasta 480px */
+@media (max-width: 480px) {
+    .titulo-header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+
+    main {
+        padding: 15px;
+    }
+
+    footer,
+    footer div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .netflix-copyright {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        position: static;
+    }
+
+    .netflix-redes-sociales,
+    footer div.netflix-redes-sociales {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 0px;
+        margin-top: 10px;
+        position: static;
+        left: 0;
+        top: auto;
+        right: 0;
+    }
+
+    footer a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 0.9rem;
+    }
+
+    .netflix-page #scrollToTop {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+        margin-bottom: -22%;
+        margin-right: -10px;
+    }
+
+
+}

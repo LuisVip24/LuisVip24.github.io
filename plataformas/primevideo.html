@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Video</title>
+    <link rel="stylesheet" href="../plataformas/Primevideo.css">
+</head>
+
+<body class="primevideo-page">
+    <header>
+        <div class="logo-header">
+            <a href="../index.html">
+                <img src="../imagenes/cinecriticologo.png" alt="CineCrítico Logo">
+            </a>
+        </div>
+        <h1>
+            <a class="primevideo-neon">
+                <span class="prime-text">prime</span> <span class="video-text">video</span>
+                <div class="flecha">
+                    <img src="../imagenes/flecha.png" alt="Flecha decorativa">
+                </div>
+            </a>
+        </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="seccion">Series</h2>
+        <div class="galeria">
+            <div class="card">
+                <img src="../imagenes/theboys2.jpg" alt="The Boys">
+                <h3>❖ The Boys</h3>
+                <p>Ácida, brutal y refrescante visión de los superhéroes.</p>
+                <p class="estrellas">★★★★★★★★★☆ (9/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/reacher.jpg" alt="Reacher">
+                <h3>❖ Reacher</h3>
+                <p>Sólido thriller de acción basado en los libros de Lee Child.</p>
+                <p class="estrellas">★★★★★★★★☆☆ (8/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/invincible.jpg" alt="Invincible">
+                <h3>❖ Invincible</h3>
+                <p>Animación madura que redefine el género de superhéroes.</p>
+                <p class="estrellas">★★★★★★★★☆☆ (8/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/ruedadeltiempo.png" alt="La Rueda del Tiempo">
+                <h3>❖ La Rueda del Tiempo</h3>
+                <p>Fantasía épica con altibajos pero mucho potencial.</p>
+                <p class="estrellas">★★★★★★☆☆☆☆ (6/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/theperipheral.jpg" alt="The Peripheral">
+                <h3>❖ The Peripheral</h3>
+                <p>Sci-fi intrigante y visualmente impactante aunque algo lenta.</p>
+                <p class="estrellas">★★★★★★★☆☆☆ (7/10)</p>
+            </div>
+        </div>
+
+        <h2 class="seccion">Películas</h2>
+        <div class="galeria">
+            <div class="card">
+                <img src="../imagenes/soundofmetal.png" alt="Sound of Metal">
+                <h3>❖ Sound of Metal</h3>
+                <p>Poderoso retrato de la pérdida y la aceptación.</p>
+                <p class="estrellas">★★★★★★★★★☆ (9/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/guerramañana.png" alt="La Guerra del Mañana">
+                <h3>❖ La Guerra del Mañana</h3>
+                <p>Acción frenética y efectos impresionantes, aunque poco original.</p>
+                <p class="estrellas">★★★★★★★☆☆☆ (7/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/borat2.jpg" alt="Borat 2">
+                <h3>❖ Borat 2</h3>
+                <p>Sátira política audaz y provocadora, no para todos los gustos.</p>
+                <p class="estrellas">★★★★★★★☆☆☆ (7/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/principe2.jpg" alt="Un Príncipe en Nueva York 2">
+                <h3>❖ Un Príncipe en Nueva York 2</h3>
+                <p>Nostalgia divertida pero sin la chispa del original.</p>
+                <p class="estrellas">★★★★★★☆☆☆☆ (6/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/withoutremorse.jpg" alt="Without Remorse">
+                <h3>❖ Without Remorse</h3>
+                <p>Thriller militar genérico pese al sólido trabajo de Michael B. Jordan.</p>
+                <p class="estrellas">★★★★★★☆☆☆☆ (6/10)</p>
+            </div>
+        </div>
+    </main>
+
+
+    <button id="scrollToTop">↑</button>
+
+    <footer>
+        <div class="prime-copyright">
+            <p>&copy; 2025 CineCrítico - Todos los derechos reservados</p>
+            <p>
+                <a href="../Sobre-nosotros.html">Sobre Nosotros</a> |
+                <a href="../Contacto.html">Contacto</a> |
+                <a href="../politica.html">Política de Privacidad</a>
+            </p>
+        </div>
+        <div class="prime-redes-sociales">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../imagenes/facebook.png" alt="Facebook Logo"> Facebook
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="../imagenes/xlogo.png" alt="Twitter Logo"> X
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../imagenes/instagramlogo.png" alt="Instagram Logo"> Instagram
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        const scrollToTopButton = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>

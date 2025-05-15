@@ -1,0 +1,63 @@
+.platform-paneles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    /* Altura específica para la sección de navegación */
+    width: 100%;
+    /* Ocupa todo el ancho del contenedor */
+    position: relative;
+    /* Asegura que los paneles estén dentro del contenedor */
+    margin-top: 20px;
+    /* Espaciado superior opcional */
+    overflow: hidden;
+    /* Oculta cualquier contenido que sobresalga */
+}
+
+.panel {
+    flex: 1;
+    /* Cada panel ocupa el mismo espacio horizontal */
+    height: 100%;
+    /* Llenan toda la altura del contenedor */
+    background-size: cover;
+    background-position: center;
+    transform: skew(0deg);
+    /* Inclina el panel hacia la izquierda */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin-right: 1px;
+    /* Elimina espacios entre los paneles */
+}
+
+.panel:hover {
+    transform: scale(1.05) skew(0deg);
+    /* Efecto de zoom al pasar el cursor */
+    opacity: 0.9;
+}
+
+.netflix-panel {
+    background-image: url('../imagenes/stranger.jpg');
+    /* Imagen de fondo para Netflix */
+    background-color: #e50914;
+    /* Color de respaldo */
+}
+
+.disney-panel {
+    background-image: url('../imagenes/endgame.jpg');
+    /* Imagen de fondo para Disney+ */
+    background-color: #113ccf;
+    /* Color de respaldo */
+}
+
+.hbo-panel {
+    background-image: url('../imagenes/gameofthrones.jpg');
+    /* Imagen de fondo para HBO Max */
+    background-color: #6a0dad;
+    /* Color de respaldo */
+}
+
+.prime-panel {
+    background-image: url('../imagenes/theboys.jpg');
+    /* Imagen de fondo para Prime Video */
+    background-color: #00a8e1;
+    /* Color de respaldo */
+}

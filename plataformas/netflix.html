@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="Netflix.css">
+</head>
+
+<body class="netflix-page">
+    <header>
+        <div class="logo-header">
+            <a href="../index.html">
+                <img src="../imagenes/cinecriticologo.png" alt="CineCrítico Logo">
+            </a>
+        </div>
+        <h1><a class="netflix-neon">NETFLIX</a></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="seccion">Series</h2>
+        <div class="galeria">
+            <div class="card">
+                <img src="../imagenes/strangerthings2.jpg" alt="Stranger Things">
+                <h3>❖ Stranger Things</h3>
+                <p>Aventura nostálgica que mezcla horror y amistad juvenil.</p>
+                <p class="estrellas">★★★★★★★★☆☆ (8/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/thewitcher.jpeg" alt="The Witcher">
+                <h3>❖ The Witcher</h3>
+                <p>Un mundo oscuro y mágico; ritmo algo confuso en la primera temporada.</p>
+                <p class="estrellas">★★★★★★★☆☆☆ (7/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/mindhunter.jpg" alt="Mindhunter">
+                <h3>❖ Mindhunter</h3>
+                <p>Profunda exploración psicológica de asesinos seriales, pausada pero adictiva.</p>
+                <p class="estrellas">★★★★★★★★★☆ (9/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/thecrown.jpg" alt="The Crown">
+                <h3>❖ The Crown</h3>
+                <p>Retrato lujoso y matizado de la monarquía británica.</p>
+                <p class="estrellas">★★★★★★★★☆☆ (8/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/blackmirror.jpg" alt="Black Mirror">
+                <h3>❖ Black Mirror</h3>
+                <p>Distopías modernas que golpean con fuerza emocional y crítica social.</p>
+                <p class="estrellas">★★★★★★★★☆☆ (8/10)</p>
+            </div>
+        </div>
+
+        <h2 class="seccion">Películas</h2>
+        <div class="galeria">
+            <div class="card">
+                <img src="../imagenes/badboys.jpg" alt="Roma">
+                <h3>❖ Bad Boys "Para Siempre"</h3>
+                <p>La "tercera secuela" de policías compañeros, violenta y cruda.</p>
+                <p class="estrellas">★★★★★★★★★★ (10/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/irlandes.jpg" alt="El Irlandés">
+                <h3>❖ El Irlandés</h3>
+                <p>Épica criminal con grandes actuaciones, pero algo extensa.</p>
+                <p class="estrellas">★★★★★★★★☆☆ (8/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/historia.jpg" alt="Historia de un Matrimonio">
+                <h3>❖ Historia de un Matrimonio</h3>
+                <p>Drama sensible y brutal sobre la ruptura amorosa.</p>
+                <p class="estrellas">★★★★★★★★★☆ (9/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/nomires.jpg" alt="No Mires Arriba">
+                <h3>❖ No Mires Arriba</h3>
+                <p>Sátira social divertida aunque algo repetitiva en su mensaje.</p>
+                <p class="estrellas">★★★★★★★☆☆☆ (7/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/fragmentos.jpeg" alt="Fragmentos de una Mujer">
+                <h3>❖ Fragmentos de una Mujer</h3>
+                <p>Dolorosa e íntima representación del duelo.</p>
+                <p class="estrellas">★★★★★★★★☆☆ (8/10)</p>
+            </div>
+        </div>
+    </main>
+
+    <button id="scrollToTop">↑</button>
+    <footer>
+        <div class="netflix-copyright">
+            <p>&copy; 2025 CineCrítico - Todos los derechos reservados</p>
+            <p>
+                <a href="../Sobre-nosotros.html">Sobre Nosotros</a> |
+                <a href="../Contacto.html">Contacto</a> |
+                <a href="../politica.html">Política de Privacidad</a>
+            </p>
+        </div>
+        <div class="netflix-redes-sociales">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../imagenes/facebook.png" alt="Facebook Logo"> Facebook
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="../imagenes/xlogo.png" alt="Twitter Logo"> X
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../imagenes/instagramlogo.png" alt="Instagram Logo"> Instagram
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        const scrollToTopButton = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>
