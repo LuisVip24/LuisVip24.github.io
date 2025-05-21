@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="CineCritico.css">
+    <link rel="stylesheet" href="plataformas/Netflix.css">
+    <link rel="stylesheet" href="plataformas/hbo.css">
+    <link rel="stylesheet" href="plataformas/Disney+.css">
+    <link rel="stylesheet" href="plataformas/paneles.css">
+</head>
+
+<body id="top">
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="imagenes/cinecriticologo.png" alt="CineCrítico Logo">
+            </a>
+        </div>
+        <h1>CineCrítico</h1>
+        <p>Tu dosis semanal de cine, críticas y opiniones</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_self">Inicio</a></li>
+            <li><a href="Criticas.html" target="_self">Críticas</a></li>
+            <li><a href="Estrenos.html" target="_self">Estrenos</a></li>
+            <li><a href="Clasicos.html" target="_self">Clásicos</a></li>
+            <li><a href="Contacto.html" target="_self">Contacto</a></li>
+        </ul>
+        <ul class="platforms-nav">
+            <li class="plataforma-netflix">
+                <a href="plataformas/netflix.html" class="netflix-neon-text">Netflix</a>
+            </li>
+            <li class="plataforma-disney">
+                <a href="plataformas/disney+.html" class="disney-neon-text">Disney+</a>
+            </li>
+            <li class="plataforma-hbo">
+                <a href="plataformas/hbo.html" class="hbo-neon-text">HBO MAX</a>
+            </li>
+            <li class="plataforma-prime">
+                <a href="plataformas/primevideo.html" class="primevideo-neon-text">
+                    <span class="prime-text">prime</span> <span class="video-text">video</span>
+                    <div class="flecha">
+                        <img src="imagenes/flecha.png" alt="Flecha de Amazon">
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="platform-paneles">
+            <div class="panel netflix-panel"></div>
+            <div class="panel disney-panel"></div>
+            <div class="panel hbo-panel"></div>
+            <div class="panel prime-panel"></div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="reseñas-recientes">
+            <h2>Explora entre las diferentes plataformas de streaming que tenemos disponibles para ti.</h2>
+            <h2>También puedes dirigirte a las diferentes secciones para informarte un poco más sobre las opiniones de
+                otras Series y Peliculas. Y ver también los nuevos Estrenos y Clásicos disponibles.</h2>
+
+            <br>
+            <h3>Si tienes algúna pregunta, no dudes de ponerte en contacto con nosotros a traves de la seccion
+                "Contacto"</h3>
+        </section>
+
+        <section id="recomendaciones">
+            <h3></h3>
+            <ul class="recomendaciones-grid">
+
+            </ul>
+        </section>
+    </main>
+
+    <button id="scrollToTop">↑</button>
+
+    <footer>
+        <div class="cinecritico-copyright">
+            <p>&copy; 2025 CineCrítico - Todos los derechos reservados</p>
+            <p>
+                <br>
+                <a href="Sobre-nosotros.html">Sobre Nosotros</a> |
+                <a href="Contacto.html">Contacto</a> |
+                <a href="politica.html">Política de Privacidad</a>
+            </p>
+        </div>
+        <div class="cinecritico-redes-sociales">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="imagenes/facebook.png" alt="Facebook Logo"> Facebook
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="imagenes/xlogo.png" alt="Twitter Logo"> X
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="imagenes/instagramlogo.png" alt="Instagram Logo"> Instagram
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        console.log("Bienvenido a CineCrítico");
+
+        setTimeout(() => {
+            const headerTitle = document.querySelector('header h1');
+            headerTitle.innerHTML = "CineCrítico <br>El ojo crítico del cine";
+        }, 3000);
+
+        document.querySelectorAll('nav a').forEach(enlace => {
+            enlace.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === "#") {
+                    e.preventDefault();
+                    alert('Sección en construcción: ' + this.textContent);
+                }
+            });
+        });
+
+        const scrollToTopButton = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>

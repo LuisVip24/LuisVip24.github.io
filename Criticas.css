@@ -1,0 +1,256 @@
+/* General */
+.criticas-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+}
+
+/* Header */
+.criticas-page header {
+    background-color: #000000;
+    padding: 1.5em;
+    border-top: 4px solid #e50914;
+    border-bottom: 4px solid #e50914;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.logo-header {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo-header img {
+    max-width: 100px;
+    height: auto;
+}
+
+.titulo-header {
+    text-align: center;
+    width: 100%;
+}
+
+.titulo-header h1 {
+    margin: 0;
+    color: #e50914;
+}
+
+/* Navegación */
+.criticas-page nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.criticas-page nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.criticas-page nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.criticas-page nav a:hover {
+    color: #e50914;
+}
+
+/* Contenido principal */
+main {
+    padding: 30px;
+    background-color: #262626;
+    margin-bottom: 100px;
+}
+
+main h2,
+main h3 {
+    color: #e50914;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000;
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 1em;
+    position: relative;
+    bottom: -0px;
+    width: 100%;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+footer.criticas-footer div.criticas-copyright {
+    text-align: center;
+}
+
+footer.criticas-footer div.criticas-copyright a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer.criticas-footer div.criticas-redes-sociales {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.criticas-redes-sociales a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.criticas-redes-sociales img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+}
+
+.criticas-redes-sociales img:hover {
+    transform: scale(1.2);
+}
+
+/*BOTON DE VOLVER ARRIBA*/
+#scrollToTop {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    display: none;
+    background-color: #252525;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /* menos redondeado que un círculo */
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#scrollToTop:hover {
+    background-color: #666666;
+    transform: translateY(-5px);
+}
+
+/* Responsive para tablets */
+@media (max-width: 768px) {
+    .criticas-page header {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .logo-header {
+        position: static;
+        transform: none;
+        margin-bottom: 10px;
+        order: -1;
+    }
+
+    .titulo-header {
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .criticas-page nav li {
+        margin: 10px;
+        display: block;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }
+
+    footer.criticas-footer div.criticas-redes-sociales {
+        position: relative;
+        right: auto;
+        margin-top: 0px;
+        justify-content: center;
+    }
+
+    .criticas-redes-sociales {
+        justify-content: center;
+    }
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+    .titulo-header h1 {
+        font-size: 1.5em;
+    }
+
+    .criticas-page nav li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    footer.criticas-footer div.criticas-redes-sociales {
+        font-size: 0.9rem;
+        padding: 0px 0;
+    }
+
+    footer.criticas-footer div {
+        margin-bottom: 8px;
+    }
+
+    .criticas-redes-sociales {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .criticas-redes-sociales img {
+        width: 18px;
+        height: 18px;
+    }
+
+    footer a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 0.9rem;
+    }
+
+    /* scrollToTop para móviles */
+    #scrollToTop {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+        bottom: 10px;
+        right: 10px;
+    }
+}

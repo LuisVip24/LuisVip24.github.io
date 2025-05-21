@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney+</title>
+    <link rel="stylesheet" href="Disney+.css">
+</head>
+
+<body class="disney-page">
+    <header>
+        <div class="logo-header">
+            <a href="../index.html">
+                <img src="../imagenes/cinecriticologo.png" alt="CineCrítico Logo">
+            </a>
+        </div>
+        <h1><a class="disney-neon">Disney+</a></h1>
+    </header>
+
+    <nav>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../Contacto.html" target="_self">Contacto</a></li>
+        </nav>
+        <main>
+            <h2 class="seccion">Series</h2>
+            <div class="galeria">
+                <div class="card">
+                    <img src="../imagenes/mandalorian.jpg" alt="The Mandalorian">
+                    <h3>❖ The Mandalorian</h3>
+                    <p>Una revitalización fresca del universo Star Wars.</p>
+                    <p class="estrellas">★★★★★★★★☆☆ (8/10)</p>
+                </div>
+                <div class="card">
+                    <img src="../imagenes/wandavision.jpg" alt="WandaVision">
+                    <h3>❖ WandaVision</h3>
+                    <p>Creativa y original, aunque algo convencional al final.</p>
+                    <p class="estrellas">★★★★★★★☆☆☆ (7/10)</p>
+                </div>
+                <div class="card">
+                    <img src="../imagenes/loki.jpg" alt="Loki">
+                    <h3>❖ Loki</h3>
+                    <p>Divertida, inteligente y fundamental para el multiverso Marvel.</p>
+                    <p class="estrellas">★★★★★★★★☆☆ (8/10)</p>
+                </div>
+                <div class="card">
+                    <img src="../imagenes/andor.jpeg" alt="Andor">
+                    <h3>❖ Andor</h3>
+                    <p>Una de las series más maduras y sólidas de Star Wars.</p>
+                    <p class="estrellas">★★★★★★★★★☆ (9/10)</p>
+                </div>
+                <div class="card">
+                    <img src="../imagenes/falcon.jpeg" alt="Falcon">
+                    <h3>❖ Falcon y el Soldado del Invierno</h3>
+                    <p>Acción sólida, aunque menos innovadora que otras series Marvel.</p>
+                    <p class="estrellas">★★★★★★★☆☆☆ (7/10)</p>
+                </div>
+            </div>
+
+            <h2 class="seccion">Películas</h2>
+            <div class="galeria">
+                <div class="card">
+                    <img src="../imagenes/soul.jpg" alt="Soul">
+                    <h3>❖ Soul</h3>
+                    <p>Reflexión hermosa sobre la vida y los propósitos.</p>
+                    <p class="estrellas">★★★★★★★★★☆ (9/10)</p>
+                </div>
+                <div class="card">
+                    <img src="../imagenes/encanto.jpg" alt="Encanto">
+                    <h3>❖ Encanto</h3>
+                    <p>Colorido musical sobre la familia, con gran corazón latino.</p>
+                    <p class="estrellas">★★★★★★★★☆☆ (8/10)</p>
+                </div>
+                <div class="card">
+                    <img src="../imagenes/cruella.jpg" alt="Cruella">
+                    <h3>❖ Cruella</h3>
+                    <p>Estilo visual impecable y actuación carismática de Emma Stone.</p>
+                    <p class="estrellas">★★★★★★★★☆☆ (8/10)</p>
+                </div>
+                <div class="card">
+                    <img src="../imagenes/luca.jpg" alt="Luca">
+                    <h3>❖ Luca</h3>
+                    <p>Encantadora historia de amistad con una estética veraniega deliciosa.</p>
+                    <p class="estrellas">★★★★★★★☆☆☆ (7/10)</p>
+                </div>
+                <div class="card">
+                    <img src="../imagenes/lightyear.png" alt="Lightyear">
+                    <h3>❖ Lightyear</h3>
+                    <p>Entretenida aunque algo olvidable dentro del universo Toy Story.</p>
+                    <p class="estrellas">★★★★★★☆☆☆☆ (6/10)</p>
+                </div>
+            </div>
+        </main>
+        <button id="scrollToTop">↑</button>
+        <footer>
+            <div class="disney-copyright">
+                <p>&copy; 2025 CineCrítico - Todos los derechos reservados</p>
+                <p>
+                    <a href="../Sobre-nosotros.html">Sobre Nosotros</a> |
+                    <a href="../Contacto.html">Contacto</a> |
+                    <a href="../politica.html">Política de Privacidad</a>
+                </p>
+            </div>
+            <div class="disney-redes-sociales">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="../imagenes/facebook.png" alt="Facebook Logo"> Facebook
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="../imagenes/xlogo.png" alt="Twitter Logo"> X
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../imagenes/instagramlogo.png" alt="Instagram Logo"> Instagram
+                </a>
+            </div>
+        </footer>
+
+        <script>
+            const scrollToTopButton = document.getElementById('scrollToTop');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 200) {
+                    scrollToTopButton.style.display = 'block';
+                } else {
+                    scrollToTopButton.style.display = 'none';
+                }
+            });
+
+            scrollToTopButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        </script>
+</body>

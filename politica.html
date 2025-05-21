@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad</title>
+    <link rel="stylesheet" href="politica.css">
+</head>
+
+<body class="politica-page">
+
+    <header>
+        <div class="logo-header">
+            <a href="index.html">
+                <img src="imagenes/cinecriticologo.png" alt="CineCrítico Logo">
+            </a>
+        </div>
+        <div class="titulo-header">
+            <h1><a class="Politicas">Política de Privacidad</a></h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Criticas.html" target="_self">Críticas</a></li>
+            <li><a href="Estrenos.html" target="_self">Estrenos</a></li>
+            <li><a href="Clasicos.html" target="_self">Clásicos</a></li>
+            <li><a href="Contacto.html" target="_self">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="politica-main">
+            <p>
+                En <strong>CineCrítico</strong>, valoramos tu privacidad y queremos que sepas cómo manejamos la
+                información que puedas compartir con nosotros. Esta Política describe qué datos
+                recopilamos, cómo los usamos y cómo protegemos tu información.
+            </p>
+
+            <h3>1. Información que recopilamos</h3>
+            <ul>
+                <li><strong>Datos personales:</strong> Solo recopilamos tu nombre, correo electrónico y mensaje cuando
+                    llenas el formulario de contacto.</li>
+                <li><strong>Datos de navegación:</strong> Podemos utilizar herramientas como cookies o estadísticas web
+                    para conocer el comportamiento general de los usuarios en nuestro sitio.</li>
+            </ul>
+
+            <h3>2. Uso de la información</h3>
+            <p>
+                La información que recopilamos se usa exclusivamente para:
+            </p>
+            <ul>
+                <li>Responder a tus mensajes o consultas.</li>
+                <li>Mejorar la experiencia del usuario en la página.</li>
+                <li>Analizar tendencias y tráfico del sitio de forma anónima.</li>
+            </ul>
+
+            <h3>3. Compartir información</h3>
+            <p>
+                <strong>No vendemos ni compartimos tu información personal</strong> con terceros, excepto si es
+                requerido por la ley o por un proveedor de servicios de correo (como Formspree o Google Forms),
+                únicamente
+                para facilitar la entrega de tus mensajes.
+            </p>
+
+            <h3>4. Seguridad</h3>
+            <p>
+                Aplicamos medidas razonables para proteger tus datos. Sin embargo, debes saber que ninguna transmisión
+                por Internet es completamente segura, por lo que el envío de datos personales es bajo tu
+                responsabilidad.
+            </p>
+
+            <h3>5. Enlaces externos</h3>
+            <p>
+                Nuestro sitio puede contener enlaces a otras plataformas (como redes sociales o servicios de streaming).
+                No nos responsabilizamos por las políticas de privacidad de esos sitios externos.
+            </p>
+
+            <h3>6. Cambios a esta política</h3>
+            <p>
+                Nos reservamos el derecho de modificar nuestra Política de Privacidad en cualquier momento. Te
+                recomendamos
+                revisarla periódicamente para estar informado sobre cómo protegemos tu información.
+            </p>
+
+            <h3>7. Contacto</h3>
+            <p>
+                Si tienes preguntas sobre esta política o sobre cómo usamos tus datos, puedes escribirnos a través de
+                nuestro <a href="contacto.html">formulario de contacto</a>.
+            </p>
+            <br>
+            <p>Última actualización: 21 de mayo de 2025</p>
+
+        </section>
+    </main>
+    <button id="scrollToTop">↑</button>
+    <footer class="politica-footer">
+        <div class="politica-copyright">
+            <p>&copy; 2025 CineCrítico - Todos los derechos reservados</p>
+            <p>
+                <a href="../Sobre-nosotros.html">Sobre Nosotros</a> |
+                <a href="../Contacto.html">Contacto</a> |
+                <a href="../politica.html">Política de Privacidad</a>
+            </p>
+        </div>
+        <div class="politica-redes-sociales">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="imagenes/facebook.png" alt="Facebook Logo"> Facebook
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="imagenes/xlogo.png" alt="Twitter Logo"> X
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="imagenes/instagramlogo.png" alt="Instagram Logo"> Instagram
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        console.log("Bienvenido a CineCrítico");
+
+        setTimeout(() => {
+            const headerTitle = document.querySelector('header h1');
+            headerTitle.innerHTML = `<span style="color: #e50914;">Política de Privacidad</span> <br><span style="color: #ffffff;">Verifica las normativas de la página</span>`;
+        }, 3000);
+
+        document.querySelectorAll('nav a').forEach(enlace => {
+            enlace.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === "#") {
+                    e.preventDefault();
+                    alert('Sección en construcción: ' + this.textContent);
+                }
+            });
+        });
+
+        const scrollToTopButton = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+
+</html>

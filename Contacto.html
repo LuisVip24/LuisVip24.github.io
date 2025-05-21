@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="Contacto.css">
+</head>
+
+<body class="contacto-page">
+
+    <header>
+        <div class="logo-header">
+            <a href="index.html">
+                <img src="imagenes/cinecriticologo.png" alt="CineCrítico Logo">
+            </a>
+        </div>
+        <div class="titulo-header">
+            <h1><a class="Contacto">Contacto</a></h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Criticas.html" target="_self">Críticas</a></li>
+            <li><a href="Estrenos.html" target="_self">Estrenos</a></li>
+            <li><a href="Clasicos.html" target="_self">Clásicos</a></li>
+            <li><a href="Contacto.html" target="_self">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="contacto-main">
+            <h2>Contáctanos</h2>
+            <form action="https://formspree.io/f/mldbkdnv" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+    <button id="scrollToTop">↑</button>
+    <footer class="contacto-footer">
+        <div class="contacto-copyright">
+            <p>&copy; 2025 CineCrítico - Todos los derechos reservados</p>
+            <p>
+                <a href="../Sobre-nosotros.html">Sobre Nosotros</a> |
+                <a href="../Contacto.html">Contacto</a> |
+                <a href="../politica.html">Política de Privacidad</a>
+            </p>
+        </div>
+        <div class="contacto-redes-sociales">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="imagenes/facebook.png" alt="Facebook Logo"> Facebook
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="imagenes/xlogo.png" alt="Twitter Logo"> X
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="imagenes/instagramlogo.png" alt="Instagram Logo"> Instagram
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        console.log("Bienvenido a CineCrítico");
+
+        setTimeout(() => {
+            const headerTitle = document.querySelector('header h1');
+            headerTitle.innerHTML = `<span style="color: #e50914;">Contacto</span> <br><span style="color: #ffffff;">Contáctanos para obetener más información</span>`;
+        }, 3000);
+
+        document.querySelectorAll('nav a').forEach(enlace => {
+            enlace.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === "#") {
+                    e.preventDefault();
+                    alert('Sección en construcción: ' + this.textContent);
+                }
+            });
+        });
+
+        const scrollToTopButton = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clásicos</title>
+    <link rel="stylesheet" href="Clasicos.css">
+</head>
+
+<body class="clasicos-page">
+
+    <header>
+        <div class="logo-header">
+            <a href="index.html">
+                <img src="imagenes/cinecriticologo.png" alt="CineCrítico Logo">
+            </a>
+        </div>
+        <div class="titulo-header">
+            <h1><a class="Clasicos">Clásicos</a></h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Criticas.html" target="_self">Críticas</a></li>
+            <li><a href="Estrenos.html" target="_self">Estrenos</a></li>
+            <li><a href="Clasicos.html" target="_self">Clásicos</a></li>
+            <li><a href="Contacto.html" target="_self">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="seccion">Series Clásicas</h2>
+        <div class="galeria">
+            <div class="card">
+                <img src="../imagenes/friends.jpg" alt="Friends">
+                <h3>❖ Friends</h3>
+                <p>Icónica comedia de amigos en Nueva York que marcó una época.</p>
+                <p class="estrellas">★★★★★★★★★☆ (9/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/theoffice.jpg" alt="The Office">
+                <h3>❖ The Office</h3>
+                <p>Mockumentary hilarante sobre la vida en una oficina de papel.</p>
+                <p class="estrellas">★★★★★★★★★★ (10/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/lost.png" alt="Lost">
+                <h3>❖ Lost</h3>
+                <p>Serie de misterio y supervivencia que revolucionó la televisión.</p>
+                <p class="estrellas">★★★★★★★★☆☆ (8/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/breakingbad.jpg" alt="Breaking Bad">
+                <h3>❖ Breaking Bad</h3>
+                <p>Transformación impactante de un profesor en capo de la droga.</p>
+                <p class="estrellas">★★★★★★★★★★ (10/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/thesopranos.jpg" alt="The Sopranos">
+                <h3>❖ The Sopranos</h3>
+                <p>Retrato psicológico del mundo mafioso con profundidad narrativa.</p>
+                <p class="estrellas">★★★★★★★★★★ (10/10)</p>
+            </div>
+
+        </div>
+        <h2 class="seccion">Películas Clásicas</h2>
+        <div class="galeria">
+            <div class="card">
+                <img src="../imagenes/godfather.jpg" alt="El Padrino">
+                <h3>❖ El Padrino</h3>
+                <p>Obra maestra del cine de mafias, inolvidable y poderosa.</p>
+                <p class="estrellas">★★★★★★★★★★ (10/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/pulpfiction.jpg" alt="Pulp Fiction">
+                <h3>❖ Pulp Fiction</h3>
+                <p>Estilo tarantinesco puro: diálogos brillantes y narración no lineal.</p>
+                <p class="estrellas">★★★★★★★★★★ (10/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/shawshank.jpg" alt="Sueño de Fuga">
+                <h3>❖ Sueño de Fuga</h3>
+                <p>Drama carcelario sobre esperanza, amistad y redención.</p>
+                <p class="estrellas">★★★★★★★★★★ (10/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/forrestgump.jpg" alt="Forrest Gump">
+                <h3>❖ Forrest Gump</h3>
+                <p>Un viaje por la historia americana con un personaje inolvidable.</p>
+                <p class="estrellas">★★★★★★★★☆ (9/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/clubdelapelea.jpg" alt="El Club de la Pelea">
+                <h3>❖ El Club de la Pelea</h3>
+                <p>Crítica al consumismo y la masculinidad moderna con un gran giro.</p>
+                <p class="estrellas">★★★★★★★★☆ (9/10)</p>
+            </div>
+        </div>
+    </main>
+    <button id="scrollToTop">↑</button>
+    <footer class="clasicos-footer">
+        <div class="clasicos-copyright">
+            <p>&copy; 2025 CineCrítico - Todos los derechos reservados</p>
+            <p>
+                <a href="../Sobre-nosotros.html">Sobre Nosotros</a> |
+                <a href="../Contacto.html">Contacto</a> |
+                <a href="../politica.html">Política de Privacidad</a>
+            </p>
+        </div>
+        <div class="clasicos-redes-sociales">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="imagenes/facebook.png" alt="Facebook Logo"> Facebook
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="imagenes/xlogo.png" alt="Twitter Logo"> X
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="imagenes/instagramlogo.png" alt="Instagram Logo"> Instagram
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        console.log("Bienvenido a CineCrítico");
+
+        setTimeout(() => {
+            const headerTitle = document.querySelector('header h1');
+            headerTitle.innerHTML = `<span style="color: #e50914;">Clasicos</span> <br><span style="color: #ffffff;">Los clásicos más vistos</span>`;
+        }, 3000);
+
+        document.querySelectorAll('nav a').forEach(enlace => {
+            enlace.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === "#") {
+                    e.preventDefault();
+                    alert('Sección en construcción: ' + this.textContent);
+                }
+            });
+        });
+
+        const scrollToTopButton = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+
+</html>

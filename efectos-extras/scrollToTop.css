@@ -1,0 +1,36 @@
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    display: none;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 9999;
+    animation: pulse 2s infinite;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#scrollToTop:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBO MAX</title>
+    <link rel="stylesheet" href="../plataformas/hbo.css">
+</head>
+
+<body class="hbo-page">
+    <header>
+        <div class="logo-header">
+            <a href="../index.html">
+                <img src="../imagenes/cinecriticologo.png" alt="CineCrítico Logo">
+            </a>
+        </div>
+        <div>
+            <h1><a class="hbo-neon">HBO MAX</a></h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../Contacto.html" target="_self">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="seccion">Series</h2>
+        <div class="galeria">
+            <div class="card">
+                <img src="../imagenes/tlou.jpg" alt="The Last of Us">
+                <h3>❖ The Last of Us</h3>
+                <p>Adaptación emocionalmente poderosa y fiel.</p>
+                <p class="estrellas">★★★★★★★★★☆ (9/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/succession.jpg" alt="Succession">
+                <h3>❖ Succession</h3>
+                <p>Ácido retrato del poder y la corrupción familiar.</p>
+                <p class="estrellas">★★★★★★★★★☆ (9/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/euphoria.jpg" alt="Euphoria">
+                <h3>❖ Euphoria</h3>
+                <p>Visualmente impactante pero a veces sobrecargada.</p>
+                <p class="estrellas">★★★★★★★☆☆☆ (7/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/chernobyl.jpg" alt="Chernobyl">
+                <h3>❖ Chernobyl</h3>
+                <p>Crónica impresionante del desastre nuclear.</p>
+                <p class="estrellas">★★★★★★★★★★ (10/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/houseofthedragon.jpg" alt="La Casa del Dragón">
+                <h3>❖ House of the Dragon</h3>
+                <p>Retoma la intriga política de Juego de Tronos con fuerza.</p>
+                <p class="estrellas">★★★★★★★★☆☆ (8/10)</p>
+            </div>
+        </div>
+
+        <h2 class="seccion">Películas</h2>
+        <div class="galeria">
+            <div class="card">
+                <img src="../imagenes/dune.jpg" alt="Dune">
+                <h3>❖ Dune</h3>
+                <p>Una epopeya de ciencia ficción visualmente asombrosa.</p>
+                <p class="estrellas">★★★★★★★★★☆ (9/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/joker.jpg" alt="Joker">
+                <h3>❖ Joker</h3>
+                <p>Oscura, perturbadora e intensa actuación de Joaquin Phoenix.</p>
+                <p class="estrellas">★★★★★★★★★☆ (9/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/thebatman.jpg" alt="Batman">
+                <h3>❖ Batman</h3>
+                <p>Versión sombría y detectivesca de Gotham.</p>
+                <p class="estrellas">★★★★★★★★☆☆ (8/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/elconjuro2.jpg" alt="El Conjuro 2">
+                <h3>❖ El Conjuro 2</h3>
+                <p>Terror clásico y efectivo, dirigido con gran maestría.</p>
+                <p class="estrellas">★★★★★★★★☆☆ (8/10)</p>
+            </div>
+            <div class="card">
+                <img src="../imagenes/tenet.jpg" alt="Tenet">
+                <h3>❖ Tenet</h3>
+                <p>Rompecabezas temporal de Nolan; espectacular pero difícil de seguir.</p>
+                <p class="estrellas">★★★★★★★☆☆☆ (7/10)</p>
+            </div>
+        </div>
+    </main>
+
+    <button id="scrollToTop">↑</button>
+    <footer>
+        <div class="hbo-copyright">
+            <p>&copy; 2025 CineCrítico - Todos los derechos reservados</p>
+            <p>
+                <a href="../Sobre-nosotros.html">Sobre Nosotros</a> |
+                <a href="../Contacto.html">Contacto</a> |
+                <a href="../politica.html">Política de Privacidad</a>
+            </p>
+        </div>
+        <div class="hbo-redes-sociales">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../imagenes/facebook.png" alt="Facebook Logo">
+                Facebook
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="../imagenes/xlogo.png" alt="Twitter Logo">
+                X
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../imagenes/instagramlogo.png" alt="Instagram Logo">
+                Instagram
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        const scrollToTopButton = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>
